@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Von Uyvico</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, 	user-scalable=no">
     <style type="text/css">
     	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
     	@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
@@ -45,7 +46,9 @@
 		}
 		#main {
 			display: block;
-			padding-left: 15px;
+			padding: 15px;
+			box-sizing: border-box;
+			width: 50%;
 		}
 		#bio {
 			font-family: 'Spartan', serif;
@@ -53,20 +56,31 @@
 			line-height: 23px;
 		}
 		#bioWrapper {
-			width: 50%;
+			width: 100%;
 			color: white;
 			background: black;
 			padding: 10px;
 			box-sizing: border-box;
 		}
+		#side {
+			width: 50%;
+			float: right;
+			box-sizing: border-box;
+			padding: 20px;
+		}
 		#protocleusLogo {
-			width: 100%;
+			width: 80%;
   			max-width: 400px;
-  			height: auto;
+  			height: auto;  
+  			margin: 20px;
+  			box-sizing: border-box;
+  			margin: auto;
+  			display: block;
 		}
 		@media only screen and (max-width: 699px) {
-			#bioWrapper {
+			#main {
 				width: 100%;
+				float: middle;
 			}
 		}
     </style>
@@ -79,6 +93,7 @@
   			<button id='socialBtn' class='navBtn'>Socials</button>	
   		</div>
   	</div>
+  	<div id='side'><img src="protocleus_compressed.jpg" id='protocleusLogo'></div>
   	<div id='main'>
     	<h1 id='tit'>Von Uyvico</h1>
     	<h2>I code and make music.</h2><br>
@@ -89,7 +104,7 @@
 				The stage name <strong>Protocleus</strong> has been inspired by <strong>Von Uyvico</strong>'s birthplace, Philippines. The name Protocleus started going public since December 31, 2017. His musical journey didn't start there, he started producing music when he was 10 from a simple yet fully-functional application called Caustic 3 to a very popular most-preferred digital audio workstation, "FL Studio."
 			</p>
 		</div>
-		<img src="protocleus_compressed.jpg" id='protocleusLogo'>
+		
 	</div>
   </body>
 </html>
